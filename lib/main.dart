@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_ui/utils/color_constant/color_constant.dart';
+import 'package:shopping_ui/view/cart_page.dart';
 import 'package:shopping_ui/view/home_screen.dart';
 
 void main() {
@@ -15,8 +16,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: ColorConstant.dark,
       ),
+      routes: {
+        "/": (context) => HomeScreen(),
+        "CartPage": (context) => CartPage()
+      },
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      //home: HomeScreen(),
     );
   }
 }

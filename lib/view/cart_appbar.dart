@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:shopping_ui/utils/color_constant/color_constant.dart';
-import 'package:badges/badges.dart' as badges;
 
-class HomeAppBar extends StatelessWidget {
-  const HomeAppBar({super.key});
+import '../utils/color_constant/color_constant.dart';
+
+class CartAppBar extends StatelessWidget {
+  const CartAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class HomeAppBar extends StatelessWidget {
       child: Row(
         children: [
           Icon(
-            Icons.sort,
+            Icons.shopping_cart,
             size: 30,
             color: ColorConstant.white,
           ),
@@ -23,27 +23,12 @@ class HomeAppBar extends StatelessWidget {
               left: 20,
             ),
             child: Text(
-              "AS Rang",
+              "My Cart",
               style: TextStyle(
                 fontSize: 23,
                 fontWeight: FontWeight.bold,
                 color: ColorConstant.white,
               ),
-            ),
-          ),
-          Spacer(),
-          badges.Badge(
-            badgeContent: Text(
-              "5",
-              style: TextStyle(color: Colors.white),
-            ),
-            onTap: () {
-              Navigator.pushNamed(context, "CartPage");
-            },
-            child: Icon(
-              size: 30,
-              Icons.shopping_cart,
-              color: ColorConstant.white,
             ),
           ),
         ],

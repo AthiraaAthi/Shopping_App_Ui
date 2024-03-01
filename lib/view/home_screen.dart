@@ -101,7 +101,7 @@ class HomeScreen extends StatelessWidget {
       bottomNavigationBar: CurvedNavigationBar(
           height: 70,
           onTap: (index) {},
-          color: ColorConstant.mainPurple,
+          color: Colors.black,
           backgroundColor: Colors.transparent,
           items: [
             Icon(
