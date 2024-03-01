@@ -8,14 +8,15 @@ class HomeAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
+      color: ColorConstant.dark,
+      //color: Colors.white,
       padding: EdgeInsets.all(25),
       child: Row(
         children: [
           Icon(
             Icons.sort,
             size: 30,
-            color: ColorConstant.mainPurple,
+            color: ColorConstant.white,
           ),
           Padding(
             padding: EdgeInsets.only(
@@ -26,7 +27,7 @@ class HomeAppBar extends StatelessWidget {
               style: TextStyle(
                 fontSize: 23,
                 fontWeight: FontWeight.bold,
-                color: ColorConstant.mainPurple,
+                color: ColorConstant.white,
               ),
             ),
           ),
@@ -40,7 +41,7 @@ class HomeAppBar extends StatelessWidget {
             child: Icon(
               size: 30,
               Icons.shopping_cart,
-              color: ColorConstant.mainPurple,
+              color: ColorConstant.white,
             ),
           ),
         ],

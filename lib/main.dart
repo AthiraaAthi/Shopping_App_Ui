@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_ui/utils/color_constant/color_constant.dart';
 import 'package:shopping_ui/view/home_screen.dart';
 
 void main() {
@@ -11,7 +12,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(scaffoldBackgroundColor: Colors.white),
+      theme: ThemeData(
+        scaffoldBackgroundColor: ColorConstant.dark,
+      ),
       debugShowCheckedModeBanner: false,
       home: HomeScreen(),
     );
