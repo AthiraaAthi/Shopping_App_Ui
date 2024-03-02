@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../utils/color_constant/color_constant.dart';
+
 class CategoriesWidget extends StatelessWidget {
   const CategoriesWidget({super.key});
 
@@ -14,7 +16,7 @@ class CategoriesWidget extends StatelessWidget {
               margin: EdgeInsets.symmetric(horizontal: 8.0),
               padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
               decoration: BoxDecoration(
-                color: Colors.black,
+                color: ColorConstant.black,
                 borderRadius: BorderRadius.circular(20),
               ),
               child: Row(
@@ -31,7 +33,7 @@ class CategoriesWidget extends StatelessWidget {
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 16,
-                        color: Colors.white),
+                        color: ColorConstant.white),
                   )
                 ],
               ),

@@ -35,14 +35,14 @@ class HomeScreen extends StatelessWidget {
                   padding: EdgeInsets.symmetric(horizontal: 15),
                   height: 50,
                   decoration: BoxDecoration(
-                    color: Colors.black, ///////xx
+                    color: ColorConstant.black, ///////xx
                     //color: Colors.white,
                     borderRadius: BorderRadius.circular(30),
                   ),
                   child: Row(
                     children: [
                       Container(
-                        color: Colors.black, ///////xx
+                        color: ColorConstant.black, ///////xx
                         margin: EdgeInsets.only(left: 5),
                         height: 50,
                         width: 300,
@@ -101,7 +101,7 @@ class HomeScreen extends StatelessWidget {
       bottomNavigationBar: CurvedNavigationBar(
           height: 70,
           onTap: (index) {},
-          color: Colors.black,
+          color: ColorConstant.black,
           backgroundColor: Colors.transparent,
           items: [
             Icon(

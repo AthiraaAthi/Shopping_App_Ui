@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../utils/color_constant/color_constant.dart';
 
-class CartAppBar extends StatelessWidget {
-  const CartAppBar({super.key});
+class ItemAppBar extends StatelessWidget {
+  const ItemAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class CartAppBar extends StatelessWidget {
               left: 20,
             ),
             child: Text(
-              "My Cart",
+              "Product Details",
               style: TextStyle(
                 fontSize: 23,
                 fontWeight: FontWeight.bold,
@@ -38,9 +38,9 @@ class CartAppBar extends StatelessWidget {
           ),
           Spacer(),
           Icon(
-            Icons.more_vert,
+            Icons.favorite,
             size: 30,
-            color: Colors.white,
+            color: Colors.red,
           )
         ],
       ),
