@@ -23,7 +23,7 @@ class HomeAppBar extends StatelessWidget {
               left: 20,
             ),
             child: Text(
-              "AS Rang",
+              "Let's Shop",
               style: TextStyle(
                 fontSize: 23,
                 fontWeight: FontWeight.bold,
@@ -37,13 +37,18 @@ class HomeAppBar extends StatelessWidget {
               "5",
               style: TextStyle(color: Colors.white),
             ),
-            onTap: () {
-              Navigator.pushNamed(context, "CartPage");
-            },
-            child: Icon(
-              size: 30,
-              Icons.shopping_cart,
-              color: ColorConstant.white,
+            // onTap: () {
+            //   Navigator.pushNamed(context, "CartPage");
+            // },
+            child: InkWell(
+              onTap: () {
+                Navigator.pushNamed(context, "CartPage");
+              },
+              child: Icon(
+                size: 30,
+                Icons.shopping_cart,
+                color: ColorConstant.white,
+              ),
             ),
           ),
         ],
